@@ -8,18 +8,20 @@
   </head>
   <body>
     <h2>Formulario de Contacto</h2>
-    <form action="">
+    <form #formu="ngForm">
       <input
         type="text"
         name="Nombre"
         placeholder="Nombre"
         required="required"
+        ngModel
       />
       <input
         type="email"
         name="Email"
         placeholder="Email"
         required="required"
+        ngModel
       />
       <input
         autocomplete="off"
@@ -31,6 +33,7 @@
         type="tel"
         name="Telefono"
         placeholder="Telefono"
+        ngModel
       />
       <textarea
         name="mensaje"
@@ -39,11 +42,13 @@
         rows="10"
         placeholder="Escribe aquí"
         required="required"
+        ngModel
       ></textarea>
-      <div class="botones">
-        <button type="reset" class="boton1">Borrar</button>
-        <button type="submit" class="boton2">Enviar</button>
-      </div>
+
+      <button type="reset" class="boton1">Borrar</button>
+      <button type="submit" class="boton2" (click)="envia(formu)">
+        Enviar
+      </button>
     </form>
   </body>
 </html>

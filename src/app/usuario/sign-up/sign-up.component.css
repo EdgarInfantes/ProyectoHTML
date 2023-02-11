@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  /* background-image: url("https://ak.uecdn.es/p/108/thumbnail/entry_id/0_8q4r58k2/width//type/2/bgcolor/000000/0_8q4r58k2.jpg"); */
+  min-height: 100vh;
+  align-items: center;
+}
+.name {
+  float: left;
+  position: relative;
+  width: 250px;
+}
+.name input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: #000;
+  font-size: 1em;
+  background: transparent;
+  border-left: 2px solid #353131;
+  border-bottom: 2px solid #000;
+  transition: 0.1s;
+}
+.name span {
+  margin-top: 5px;
+  left: 0;
+  position: absolute;
+  margin-left: 10px;
+  padding: 10px;
+  transform: translateY(-4px);
+  pointer-events: none;
+  font-size: 12px;
+  color: #000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.name input:valid ~ span,
+.name input:focus ~ span {
+  transform: translateX(113px) translateY(-15px);
+  padding: 5px 10px;
+  font-size: 0.8em;
+  background: #000;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+
+.name input:valid,
+.name input:focus {
+  border: 2px solid #000;
+}
+.apellido {
+  float: left;
+  position: relative;
+  width: 250px;
+}
+.apellido input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: #000;
+  font-size: 1em;
+  background: transparent;
+  border-left: 2px solid #353131;
+  border-bottom: 2px solid #000;
+  transition: 0.1s;
+}
+.apellido span {
+  margin-top: 5px;
+  left: 0;
+  position: absolute;
+  margin-left: 10px;
+  padding: 10px;
+  transform: translateY(-4px);
+  pointer-events: none;
+  font-size: 12px;
+  color: #000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.apellido input:valid ~ span,
+.apellido input:focus ~ span {
+  transform: translateX(113px) translateY(-15px);
+  padding: 5px 10px;
+  font-size: 0.8em;
+  background: #000;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+
+.apellido input:valid,
+.apellido input:focus {
+  border: 2px solid #000;
+}
+.usuario {
+  float: left;
+  position: relative;
+  width: 250px;
+}
+.usuario input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: #000;
+  font-size: 1em;
+  background: transparent;
+  border-left: 2px solid #353131;
+  border-bottom: 2px solid #000;
+  transition: 0.1s;
+}
+.usuario span {
+  margin-top: 5px;
+  left: 0;
+  position: absolute;
+  margin-left: 10px;
+  padding: 10px;
+  transform: translateY(-4px);
+  pointer-events: none;
+  font-size: 12px;
+  color: #000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.usuario input:valid ~ span,
+.usuario input:focus ~ span {
+  transform: translateX(113px) translateY(-15px);
+  padding: 5px 10px;
+  font-size: 0.8em;
+  background: #000;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+
+.usuario input:valid,
+.usuario input:focus {
+  border: 2px solid #000;
+}
+.genero {
+  float: left;
+  position: relative;
+  width: 250px;
+  background-color: transparent;
+  background: transparent;
+  text-transform: inherit;
+}
+.creaPass {
+  float: left;
+  position: relative;
+  width: 250px;
+}
+.repitePass {
+  float: left;
+  position: relative;
+  width: 250px;
+}
+.correo {
+  float: left;
+  position: relative;
+  width: 500px;
+}
+.correo input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: #000;
+  font-size: 1em;
+  background: transparent;
+  border-left: 2px solid #353131;
+  border-bottom: 2px solid #000;
+  transition: 0.1s;
+}
+.correo span {
+  margin-top: 5px;
+  left: 0;
+  position: absolute;
+  margin-left: 10px;
+  padding: 10px;
+  transform: translateY(-4px);
+  pointer-events: none;
+  font-size: 12px;
+  color: #000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.correo input:valid ~ span,
+.correo input:focus ~ span {
+  transform: translateX(400px) translateY(-15px);
+  padding: 5px 10px;
+  font-size: 0.8em;
+  background: #000;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+
+.correo input:valid,
+.correo input:focus {
+  border: 2px solid #000;
+}
+
+.pass {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 500px;
+}
+.creaPass {
+  float: left;
+  position: relative;
+  width: 300px;
+}
+.creaPass input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: #000;
+  font-size: 1em;
+  background: transparent;
+  border-left: 2px solid #353131;
+  border-bottom: 2px solid #000;
+  transition: 0.1s;
+}
+.creaPass span {
+  margin-top: 5px;
+  left: 0;
+  position: absolute;
+  margin-left: 10px;
+  padding: 10px;
+  transform: translateY(-4px);
+  pointer-events: none;
+  font-size: 12px;
+  color: #000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.creaPass input:valid ~ span,
+.creaPass input:focus ~ span {
+  transform: translateX(-113px) translateY(-15px);
+  padding: 5px 10px;
+  font-size: 0.8em;
+  background: #000;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+
+.creaPass input:valid,
+.creaPass input:focus {
+  border: 2px solid #000;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  width: 600px;
+  gap: 35px;
+  border-radius: 5pc;
+  flex-direction: column;
+  background-color: bisque;
+  box-shadow: 16px 16px 32px #353131, -16px -16px 32px rgb(172, 168, 10);
+}
+.repitePass {
+  margin-left: 50px;
+  float: left;
+  position: relative;
+  width: 300px;
+}
+.repitePass input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: #000;
+  font-size: 1em;
+  background: transparent;
+  border-left: 2px solid #353131;
+  border-bottom: 2px solid #000;
+  transition: 0.1s;
+}
+.repitePass span {
+  margin-top: 5px;
+  left: 0;
+  position: absolute;
+  margin-left: 10px;
+  padding: 10px;
+  transform: translateY(-4px);
+  pointer-events: none;
+  font-size: 12px;
+  color: #000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.repitePass input:valid ~ span,
+.repitePass input:focus ~ span {
+  transform: translateX(113px) translateY(-15px);
+  padding: 5px 10px;
+  font-size: 0.8em;
+  background: #000;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+
+.repitePass input:valid,
+.repitePass input:focus {
+  border: 2px solid #000;
+}
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+button {
+  height: 40px;
+  width: 100px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: transparent;
+  transition: 0.5s;
+  text-transform: initial;
+  font-size: 10px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #000;
+  color: #fff;
+}

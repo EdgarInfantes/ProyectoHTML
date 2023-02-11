@@ -1,0 +1,59 @@
+body {
+  background-image: url("https://www.lugaresdeaventura.com/sites/default/files/2022-11/aurora-boreal-09-fotografia-Pertti-Turunen-visit-finland-lugares-de-aventura.jpg");
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: monospace;
+}
+form {
+  width: 500px;
+  margin: auto;
+  background: transparent;
+  background-image: url("https://cdn0.ecologiaverde.com/es/posts/7/6/8/que_son_las_auroras_polares_y_sus_tipos_3867_0_600.jpg");
+  padding: 10 px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+h2 {
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+input,
+textarea {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+}
+textarea {
+  min-width: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+button {
+  background: #313131;
+  color: #ffffff;
+  padding: 20px;
+}
+button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  form {
+    width: 100%;
+  }
+}
+.boton1 {
+  margin-left: 70px;
+  margin-right: 100px;
+}
+.boton2 {
+  margin-left: 100px;
+}

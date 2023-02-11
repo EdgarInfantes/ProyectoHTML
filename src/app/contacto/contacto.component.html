@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <h2>Formulario de Contacto</h2>
+    <form action="">
+      <input
+        type="text"
+        name="Nombre"
+        placeholder="Nombre"
+        required="required"
+      />
+      <input
+        type="email"
+        name="Email"
+        placeholder="Email"
+        required="required"
+      />
+      <input
+        autocomplete="off"
+        minlength="9"
+        maxlength="9"
+        required="required"
+        data-pristine-pattern="/^9[0-9]*$/i"
+        data-allowed-keys="integer"
+        type="tel"
+        name="Telefono"
+        placeholder="Telefono"
+      />
+      <textarea
+        name="mensaje"
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Escribe aquí"
+        required="required"
+      ></textarea>
+      <div class="botones">
+        <button type="reset" class="boton1">Borrar</button>
+        <button type="submit" class="boton2">Enviar</button>
+      </div>
+    </form>
+  </body>
+</html>

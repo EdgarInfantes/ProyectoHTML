@@ -1,0 +1,12 @@
+.addUsers {
+  background-color: bisque;
+  width: 500px;
+  height: auto;
+  min-height: 300px;
+  margin-left: 50px;
+  align-items: center;
+  text-transform: inherit;
+  border-radius: 3cm;
+  text-align: center;
+  box-shadow: -16px -16px 32px #353131, 16px 16px 32px rgb(172, 168, 10);
+}

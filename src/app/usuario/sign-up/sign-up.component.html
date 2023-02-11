@@ -1,0 +1,73 @@
+<div class="container">
+  <form #form="ngForm">
+    <div class="card">
+      <h3>Regístrate</h3>
+      <div class="caja1">
+        <div class="name">
+          <input type="text" required="required" name="name" ngModel />
+          <span>Nombre</span>
+        </div>
+        <div class="apellido">
+          <input type="text" required="required" name="apellido" ngModel />
+          <span>Apellido</span>
+        </div>
+      </div>
+      <div class="caja2">
+        <div class="usuario">
+          <input type="text" required="required" name="usuario" ngModel />
+          <span>Usuario</span>
+        </div>
+        <div class="genero" name="genero" ngModel>
+          <select
+            name="sexo"
+            style="
+              background-color: bisque;
+              margin-top: 10px;
+              margin-left: 10px;
+              text-transform: uppercase;
+              border-left: 2px solid #353131;
+            "
+            ngModel
+          >
+            <option value="" disabled="disabled" selected>Sexo</option>
+            <option value="">Hombre</option>
+            <option value="">Mujer</option>
+            <option value="">Prefiero No Decirlo</option>
+          </select>
+        </div>
+      </div>
+      <div class="correo">
+        <input type="email" required="required" name="correo" ngModel />
+        <span>Email</span>
+      </div>
+      <div class="pass">
+        <div class="creaPass">
+          <input
+            type="password"
+            minlength="5"
+            maxlength="20"
+            required="required"
+            name="pass"
+            ngModel
+          />
+          <span>Contraseña</span>
+        </div>
+        <div class="repitePass">
+          <input
+            type="password"
+            minlength="5"
+            maxlength="20"
+            required="required"
+            name="repite"
+            ngModel
+          />
+          <span>Repite Tu Contraseña</span>
+        </div>
+      </div>
+      <button name="boton" type="submit" (click)="agregaUsuario(form)">
+        Crear
+      </button>
+    </div>
+  </form>
+  <app-list-user></app-list-user>
+</div>

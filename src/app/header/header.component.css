@@ -1,0 +1,19 @@
+.spacer {
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  color: lightblue;
+  background-color: #232724;
+  padding: 15px 25px;
+}
+mat-toolbar {
+  background-color: #000000;
+}

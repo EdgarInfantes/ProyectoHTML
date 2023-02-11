@@ -1,0 +1,14 @@
+<div class="addUsers">
+  <div *ngIf="userList.length > 0">
+    <mat-list>
+      <mat-list-item-title>Historial de Registros:</mat-list-item-title> <br />
+
+      <mat-list-item *ngFor="let user of userList">
+        {{ user.correo }} ha sido agregado exitosamente. <br />
+      </mat-list-item>
+    </mat-list>
+  </div>
+  <p class="mat-body-1" *ngIf="userList.length <= 0">
+    Ningún usuario registrado
+  </p>
+</div>

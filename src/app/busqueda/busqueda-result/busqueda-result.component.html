@@ -1,0 +1,48 @@
+<div
+  *ngIf="criteriaListenedFromExternalComponent.criteria == ''"
+  class="wrapper"
+>
+  <div class="titulo">
+    <h1 style="color: aliceblue">Sin Filtro</h1>
+  </div>
+</div>
+<br />
+<div class="wrapper" *ngIf="loading">
+  <div class="lds-dual-ring"></div>
+</div>
+<div *ngIf="criteriaListenedFromExternalComponent.criteria != '' && !loading">
+  <div class="wrapper">
+    <div class="titulo">
+      <h1 style="color: aliceblue">
+        {{ criteriaListenedFromExternalComponent.criteria }}
+      </h1>
+    </div>
+  </div>
+  <hr />
+  <div class="contenedor">
+    <div class="estrellas">
+      <div *ngFor="let star of criteriaListenedFromExternalComponent.stars">
+        <div class="card">
+          <figure>
+            <img
+              src="https://concepto.de/wp-content/uploads/2019/10/nebulosa-helice-planetaria-e1570990002852-800x400.jpg"
+              alt=""
+            />
+          </figure>
+          <div class="contenido">
+            <h3>{{ star.name }}</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque consequatur perspiciatis tempore ea quaerat nisi, iusto
+              dolores. Dolor impedit maxime voluptate voluptatum, debitis, eius,
+              repellendus repudiandae eveniet placeat maiores facilis!
+            </p>
+            <a href="#">leer mas</a>
+          </div>
+          <hr />
+        </div>
+        <hr class="linea" />
+      </div>
+    </div>
+  </div>
+</div>

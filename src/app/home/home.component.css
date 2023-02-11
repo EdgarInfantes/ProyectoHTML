@@ -1,0 +1,48 @@
+section {
+  margin-left: 100px;
+  display: flex;
+  width: 600px;
+  height: 300px;
+  border-radius: 0.5cm;
+  background: rgb(179, 151, 179);
+}
+section img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5 ease;
+}
+section img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+.parrafo {
+  margin-left: 200px;
+  width: 800px;
+}
+p {
+  color: azure;
+}
+.main {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 200px);
+}
+.asside {
+  background: rgba(8, 79, 149, 0.053);
+  margin-left: 50px;
+  width: 400px;
+  height: 150px;
+  border-radius: 0.5cm;
+}
+.asside p {
+  margin-left: 15px;
+}
+.parr {
+  background-image: url("/src/assets/home2.jpg");
+}
